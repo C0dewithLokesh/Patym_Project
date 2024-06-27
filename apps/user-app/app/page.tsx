@@ -5,6 +5,5 @@ export default function Home() {
     <div className="text-red-500">Hi there
     <Button appName="Patym" className="text-blue-500">Click</Button>
     </div>
-
   );
 }
