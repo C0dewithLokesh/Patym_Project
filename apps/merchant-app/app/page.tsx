@@ -2,6 +2,6 @@
 
 export default function() {
   return <div>
-    Merchant App
+    Merchant App 
   </div>
 }
