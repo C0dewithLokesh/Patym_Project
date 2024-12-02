@@ -38,4 +38,4 @@ jobs:
             sudo docker pull lokeshkaushik22/patym-project:latest
             sudo docker stop patym-project || true
             sudo docker rm patym-project || true
-            sudo docker run -d --name web-app -p 3005:3001 lokeshkaushik22/patym-project:latest
+            sudo docker run -e DATABASE_URL ${{ secrets.DB_URL }} -d --name web-app -p 3005:3001 lokeshkaushik22/patym-project:latest
